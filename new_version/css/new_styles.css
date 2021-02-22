@@ -75,6 +75,8 @@ body {
     width: 100%;
     height: 100%;
     position: relative;
+
+    font-family: 'IBM Plex Mono';
     /* border-radius: inherit; */
 
     /* Para centrar en pantalla.
@@ -134,10 +136,14 @@ body {
 /* block-name__element--modifier */
 .login-container__text-box {
 
-    min-width: 30px;
-    width: 35%;
+    min-width: 10px;
+    width: 30%;
     height: 4% ;
     position: absolute;
+    font-family: 'IBM Plex Mono';
+
+    padding-left: 10px;
+    padding-right: 10px;
 
     border: 1px solid lightgray;
     background-color:#F5F5F5;
