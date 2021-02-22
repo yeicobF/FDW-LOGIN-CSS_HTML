@@ -16,6 +16,8 @@
         .stick-man__head--small { }
  */
 
+
+
 body {
     /* background-color: seashell; */
     /* DEGRADADO RADIAL
@@ -76,6 +78,8 @@ body {
     height: 100%;
     position: relative;
 
+    margin: auto;
+
     font-family: 'IBM Plex Mono';
     /* border-radius: inherit; */
 
@@ -115,13 +119,30 @@ body {
         height: 100px; */
 
     /* padding: inherit; */
+    /* font-size:calc(16px + 1.5vw); */
 
     
     min-width: 30px;
     width: 40%;
     height: 4% fixed;
-    font-size: medium;
+    /* font-size: 2.5vw; */
+    /* MINIMUM FONT SIZE
+    font-size:calc(16px + .8vw);
+
+    /* MAX FONT SIZE */
+    /* font-size: max(.8vw, 20px); */
+
+
+    /* TAMAÑO MÍNIMO Y MÁXIMO DE FUENTE:
     
+    - https://css-tricks.com/how-do-you-do-max-font-size-in-css/
+
+        ABSOLUTE SIZE, RELATIVE SIZE, LENGTH-PERCENTAGE
+    */
+    /* font-size: clamp(16px, 4vw, 22px); */
+    font-size: clamp(16px, 2vw, 20px);
+
+
     text-align: center;
 
     /* font-weight: bold; */
@@ -129,18 +150,26 @@ body {
     /* Posición relativa al contenedor padre. */
     position: absolute;
     /* overflow: hidden; */
-    bottom: 45%;
+    /* bottom: 45%;
 
+    margin: 0 auto; */
+    /* top: 50%; */
     
+    /* CENTRAMOS VERTICALMENTE */
+    left: 50%;
+    transform: translateX(-50%);
 }
 /* block-name__element--modifier */
 .login-container__text-box {
 
+    /* font-size:calc(16px + 1vw); */
+    
     min-width: 10px;
-    width: 30%;
-    height: 4% ;
+    /* width: 30%;
+    height: 4% ; */
     position: absolute;
     font-family: 'IBM Plex Mono';
+    font-size: clamp(16px, 2vw, 20px);
 
     padding-left: 10px;
     padding-right: 10px;
@@ -152,15 +181,36 @@ body {
     /* TUVE QUE PONER BOTTOM PORQUE NO SE PUSO ENCIMA EL TEXTO DE LOS CUADROS. */
     bottom: 40%;
     /* position: absolute; */
+    /* margin: auto; */
+
+    /* CENTRAMOS VERTICALMENTE */
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 
-#username {
-    left: 10%;
+#username.login-container__text {
+    top: 40%;
+    /* font-size: 16px; */
+    /* float: left; */
+    /* left: 10%; */
+    /* margin-left: auto;
+    margin-right: 0; */
 }
 
-#password {
-    right: 10%;
+#username.login-container__text-box {
+
 }
 
+#password.login-container__text {
+    /* float: right; */
+    /* right: 10%; */
+}
+
+#responsive-font {
+    font-family: 'IBM Plex Mono';
+    font-weight: bold;
+    font-size: clamp(16px, 1.5vw, 22px);
+    color: #000635;
+}
 

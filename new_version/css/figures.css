@@ -14,8 +14,29 @@
 
 
 .circle {
-    height: 95px;
-    width: 95px;
+    /* display: inline-flex;
+    flex-wrap:wrap;
+    justify-content: space-evenly;
+    margin: auto; */
+    width: 16vw;
+    height: 16vw;
+
+    max-width: 120px;
+    max-height: 120px;
+    min-height: 80px;
+    min-width: 80px;
+
+    /* PARA HACER QUE ANCHO = ALTO.
+    
+    FUENTE: https://www.w3schools.com/howto/howto_css_aspect_ratio.asp
+    */
+   /* height: 80px;
+   width: 80px; */
+    /* min-width: 20%;
+    padding-top: 20%; */
+    /* height: 40%; */
+
+
     /* background-image: radial-gradient(circle, lightblue, #B18DF1 ); */
     background-image: radial-gradient(circle, #00FFF7, #00FF8B );
     border-radius: 50%;
@@ -23,7 +44,7 @@
     position: relative;
     /* bottom: 40px; */
     margin: auto;
-    top: 40px;
+    top: 20px;
     border-style: groove;
     
     transition: 0.6s;
@@ -36,6 +57,8 @@
 }
 
 .button {
+
+
     position: absolute;
 
     bottom: 35px;
@@ -50,7 +73,7 @@
     background-color: #05FEB3;
     color: indigo;
     border-radius: 5px;
-    padding: 5px;
+    padding: 10px;
 
     text-align: center;
     margin: auto;
@@ -75,6 +98,10 @@
     /* background-color: #F270FF; */
     background-color: #39FFFC;
     color: #7A05FE;
+    transform: translate(-50%, 1px);
+    box-shadow: 0px 5px #670071;
+
+
 }
 
 /* PARA CUANDO SE PRESIONA EL BOTÓN 
@@ -82,5 +109,5 @@
 */
 .button:active {
     box-shadow: 0px 2px #670071;
-    transform: translate(-50%, 4px);
+    transform: translate(-50%, 3px);
 }
