@@ -18,29 +18,32 @@
     <div class="border-gradient">
         <div class="login-container">
             <!-- <div class="login-container__text"> -->
-                
-                
-                <label for="username" class="login-container__text" id="username">
+
+            <!-- POR AHORA TENDRÉ QUE SER MUY REDUNDANTE CON LOS ELEMENTOS, YA
+                QUE ASÍ QUEDARÁN EN MEJOR ORDEN Y AÚN NO SÉ UTILIZAR CSS DEL
+                TODO BIEN.
+             -->
+            <div class="login-container__text" id="username">
+
+                <!-- TEXTO ENCIMA DEL USERNAME. -->
+                <label for="username">
                     <b>Username</b>
                 </label>
-                <label for="password" class="login-container__text" id="password">
+                <input type="text" class="login-container__text--text-box"
+                       placeholder="Usuario o correo" name="username" required>
+
+            </div>
+                
+            <div class="login-container__text" id="password">
+
+                <label for="password">
                     <b>Contraseña</b>
                 </label>
-                
-                <!-- </div> -->
-                
-            <!-- <div class="login-container__text"> -->
-                <input type="text" class="login-container__text--text-box" id="username" placeholder="Usuario o correo"
-                    name="username" required>
-                <div class="login-container__text">
+                <input type="password" class="login-container__text--text-box"
+                       placeholder="Contraseña" name="password" required>
 
-
-                    <input type="password" class="login-container__text--text-box" id="password" placeholder="Contraseña"
-                        name="password" required>
-
-                    <!-- <div class="login-container__text-box"></div> -->
-                </div>
-            <!-- </div> -->
+            </div>
+            
         </div>
     </div>
 </body>

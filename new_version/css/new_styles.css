@@ -28,6 +28,7 @@ body {
     /* background-image: radial-gradient(circle, #FFFFFF, #CAF8FF , #00E0FF); */
     
     font-family: "Segoe UI";
+    /* font-size: 10vw; */
     font-weight: lighter;
 
     background: black;
@@ -107,11 +108,14 @@ body {
 
     /* padding: inherit; */
 
+    
     min-width: 50px;
     width: 30%;
     height: 6%;
     font-size: medium;
     
+    text-align: center;
+
     /* font-weight: bold; */
     
     /* Posición relativa al contenedor padre. */
