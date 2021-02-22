@@ -207,10 +207,23 @@ body {
     /* right: 10%; */
 }
 
+#responsive-font.button {
+    font-family: 'IBM Plex Mono';
+    font-weight: bold;
+    font-size: clamp(16px, 1.5vw, 24px);
+    color: #000635;
+}
 #responsive-font {
     font-family: 'IBM Plex Mono';
     font-weight: bold;
     font-size: clamp(16px, 1.5vw, 22px);
-    color: #000635;
+    color: white;
+}
+#responsive-font.login-container__text-box
+ {
+    font-family: 'IBM Plex Mono';
+    font-weight: bold;
+    font-size: clamp(16px, 1.5vw, 22px);
+    color: black;
 }
 
