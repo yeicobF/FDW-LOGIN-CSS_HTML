@@ -14,9 +14,10 @@
 
 
 .circle {
-    height: 80px;
-    width: 80px;
-    background-image: radial-gradient(circle, lightblue, #B18DF1 );
+    height: 95px;
+    width: 95px;
+    /* background-image: radial-gradient(circle, lightblue, #B18DF1 ); */
+    background-image: radial-gradient(circle, #00FFF7, #00FF8B );
     border-radius: 50%;
     /* display: inline-block; */
     position: relative;
@@ -24,6 +25,14 @@
     margin: auto;
     top: 40px;
     border-style: groove;
+    
+    transition: 0.6s;
+    
+}
+
+.circle:hover {
+    background-image: radial-gradient(circle, #00FFF9, #FFFFFF);
+    /* background-image: radial-gradient(circle, #B18DF1, lightblue); */
 }
 
 .button {
@@ -55,7 +64,7 @@
     transform: translate(-50%, 0%);
 
     /* PARA QUE EL BOTÓN TENGA SOMBRA */
-    box-shadow: 0px 4px #9900A9 ;
+    box-shadow: 0px 6px #9900A9 ;
 }
 
 /* PARA CUANDO PASE EL PUNTERO ENCIMA DEL BOTÓN.
@@ -73,5 +82,5 @@
 */
 .button:active {
     box-shadow: 0px 2px #670071;
-    transform: translate(-50%, 2px);
+    transform: translate(-50%, 4px);
 }
