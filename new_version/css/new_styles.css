@@ -61,8 +61,8 @@ body {
 
     margin-top: 10vh;
 
-    min-width: 400px;
-    min-height: 300px;
+    min-width: 250px;
+    min-height: 350px;
 
     /* background: linear-gradient(diagonal, #743ad5, #d53a9d); */
 }
@@ -74,6 +74,7 @@ body {
     /* padding: 2rem; */
     width: 100%;
     height: 100%;
+    position: relative;
     /* border-radius: inherit; */
 
     /* Para centrar en pantalla.
@@ -101,6 +102,11 @@ body {
 
 }
 
+/* .login-container  .login-container__text {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+} */
 
 .login-container__text {
         /* width: 300px;
@@ -109,9 +115,9 @@ body {
     /* padding: inherit; */
 
     
-    min-width: 50px;
-    width: 30%;
-    height: 6%;
+    min-width: 30px;
+    width: 40%;
+    height: 4% fixed;
     font-size: medium;
     
     text-align: center;
@@ -120,28 +126,34 @@ body {
     
     /* Posición relativa al contenedor padre. */
     position: absolute;
+    /* overflow: hidden; */
+    bottom: 45%;
+
     
 }
 /* block-name__element--modifier */
-.login-container__text--text-box {
+.login-container__text-box {
 
-    
+    min-width: 30px;
+    width: 35%;
+    height: 4% ;
+    position: absolute;
+
     border: 1px solid lightgray;
     background-color:#F5F5F5;
     
     border-radius: 10px;
-
+    /* TUVE QUE PONER BOTTOM PORQUE NO SE PUSO ENCIMA EL TEXTO DE LOS CUADROS. */
+    bottom: 40%;
+    /* position: absolute; */
 }
 
 
 #username {
-    
-    bottom: 35%;
     left: 10%;
 }
 
 #password {
-    bottom: 35%;
     right: 10%;
 }
 

@@ -23,27 +23,31 @@
                 QUE ASÍ QUEDARÁN EN MEJOR ORDEN Y AÚN NO SÉ UTILIZAR CSS DEL
                 TODO BIEN.
              -->
-            <div class="login-container__text" id="username">
+            <!-- <div > -->
 
                 <!-- TEXTO ENCIMA DEL USERNAME. -->
-                <label for="username">
+                <label for="username" class="login-container__text" id="username">
                     <b>Username</b>
                 </label>
-                <input type="text" class="login-container__text--text-box"
-                       placeholder="Usuario o correo" name="username" required>
 
-            </div>
-                
-            <div class="login-container__text" id="password">
-
-                <label for="password">
+                <label for="password" class="login-container__text" id="password">
                     <b>Contraseña</b>
                 </label>
-                <input type="password" class="login-container__text--text-box"
-                       placeholder="Contraseña" name="password" required>
 
-            </div>
+            <!-- </div> -->
             
+            
+            <!-- <div class="login-container__text-box"> -->
+                
+
+                <input type="text" class="login-container__text-box"
+                       id="username" placeholder="Usuario o correo"
+                       name="username" required>
+                <input type="password" class="login-container__text-box"
+                       id="password" placeholder="Contraseña"
+                       name="password" required>
+
+            <!-- </div> -->
         </div>
     </div>
 </body>
