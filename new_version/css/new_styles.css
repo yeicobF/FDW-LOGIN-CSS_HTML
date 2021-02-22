@@ -36,19 +36,10 @@ body {
     /* background-position: center; */
 }
 
-/* div{
-
-} */
-
-.container {
-    width: 100%;
-    height: 300px;
-}
-
 /* Hay que hacer una imagen con mayor tamaño para ponerla debajo y se vea el
-    gradiente. 
+    gradiente en el borde. 
     
-FUENTE: https://css-tricks.com/gradient-borders-in-css/
+    - FUENTE: https://css-tricks.com/gradient-borders-in-css/
 */
 .border-gradient {
     /* max-width: 250px; */
@@ -75,6 +66,7 @@ FUENTE: https://css-tricks.com/gradient-borders-in-css/
     /* background: linear-gradient(diagonal, #743ad5, #d53a9d); */
 }
 
+/* CONTENEDOR DEL CUADRO DE LOGIN. */
 .login-container {
     background: #222;
     color: white;
@@ -139,7 +131,7 @@ FUENTE: https://css-tricks.com/gradient-borders-in-css/
 
 
 #username {
-
+    
     bottom: 35%;
     left: 10%;
 }

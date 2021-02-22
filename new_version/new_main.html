@@ -17,20 +17,30 @@
 
     <div class="border-gradient">
         <div class="login-container">
+            <!-- <div class="login-container__text"> -->
+                
+                
+                <label for="username" class="login-container__text" id="username">
+                    <b>Username</b>
+                </label>
+                <label for="password" class="login-container__text" id="password">
+                    <b>Contraseña</b>
+                </label>
+                
+                <!-- </div> -->
+                
+            <!-- <div class="login-container__text"> -->
+                <input type="text" class="login-container__text--text-box" id="username" placeholder="Usuario o correo"
+                    name="username" required>
+                <div class="login-container__text">
 
 
-            <input type="text" class="login-container__text--text-box" id="username" placeholder="Usuario o correo"
-                name="username" required>
-            <div class="login-container__text">
+                    <input type="password" class="login-container__text--text-box" id="password" placeholder="Contraseña"
+                        name="password" required>
 
-                <label for="username" id="username"><b>Username</b></label>
-
-                <label for="password" id="password"><b>Contraseña</b></label>
-                <input type="password" class="login-container__text--text-box" id="password" placeholder="Contraseña"
-                    name="password" required>
-
-                <!-- <div class="login-container__text-box"></div> -->
-            </div>
+                    <!-- <div class="login-container__text-box"></div> -->
+                </div>
+            <!-- </div> -->
         </div>
     </div>
 </body>
