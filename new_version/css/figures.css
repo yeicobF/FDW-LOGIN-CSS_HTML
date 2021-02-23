@@ -47,12 +47,13 @@
     top: 20px;
     border-style: groove;
     
-    transition: 0.6s;
+    transition: 1s;
     
 }
 
 .circle:hover {
     background-image: radial-gradient(circle, #00FFF9, #FFFFFF);
+    transform: scale(0.8);
     /* background-image: radial-gradient(circle, #B18DF1, lightblue); */
 }
 

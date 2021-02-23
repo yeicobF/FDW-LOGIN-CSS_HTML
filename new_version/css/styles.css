@@ -1,0 +1,264 @@
+/*
+
+[Domingo, 21 FEB 2021]
+
+    Leí en internet acerca de las convenciones para los nombres de las clases en
+    CSS en el siguiente enlace:
+
+        - https://www.freecodecamp.org/news/css-naming-conventions-that-will-save-you-hours-of-debugging-35cea737d849/
+
+    block-name-class:
+    block-name__element:
+    block-name__element--modifier:
+
+     - EJEMPLO:
+
+        .stick-man__head--small { }
+ */
+
+
+
+body {
+    /* background-color: seashell; */
+    /* DEGRADADO RADIAL
+
+    FUENTES:
+        - https://www.w3schools.com/css/css3_gradients_radial.asp
+        - https://css-tricks.com/gradient-borders-in-css/
+    */
+    /* background-image: radial-gradient(circle, #743ad5, #d53a9d); */
+    /* background-image: radial-gradient(circle, #FFFFFF, #CAF8FF , #00E0FF); */
+    
+    /* font-family: "Segoe UI"; */
+    /* font-size: 10vw; */
+    font-weight: lighter;
+
+    background: black;
+    background-image: url(../imgs/black-camo-background.jpg);
+    background-size: cover;
+    /* background-position: center; */
+}
+
+/* Hay que hacer una imagen con mayor tamaño para ponerla debajo y se vea el
+    gradiente en el borde. 
+    
+    - FUENTE: https://css-tricks.com/gradient-borders-in-css/
+*/
+.border-gradient {
+    /* max-width: 250px; */
+    /* padding: 1rem; */
+    position: relative;
+    background: linear-gradient(to right, #743ad5, #d53a9d);
+
+    /* SOMBRA EN EL DIV.
+    box-shadow: x, y, blur, spread; */
+    box-shadow: 0px 0px 15px 2px deepskyblue;
+
+    padding: 4px;
+
+    /* vw: vieport width, vh: viewport height */
+    width: 70vw;
+    max-width: 560px;
+
+
+    height: 70vh;
+    /* display: block; */
+    margin: auto;
+    /* border-radius: 10px; */
+
+    margin-top: 5vh;
+
+    min-width: 250px;
+    min-height: 380px;
+
+    /* PARA LA SOMBRA, EL TIEMPO DE TRANSICIÓN. */
+    transition: 1s;
+
+    /* background: linear-gradient(diagonal, #743ad5, #d53a9d); */
+}
+
+.border-gradient:hover {
+    box-shadow: 0px 0px 20px 2px blueviolet;
+}
+
+/* CONTENEDOR DEL CUADRO DE LOGIN. */
+.login-container {
+    background: #222;
+    color: white;
+    /* padding: 2rem; */
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+    
+
+
+    margin: auto;
+
+    font-family: 'IBM Plex Mono';
+    /* border-radius: inherit; */
+
+    /* Para centrar en pantalla.
+
+    FUENTE: https://www.w3schools.com/css/css_align.asp
+    */
+    /* margin: auto;
+    margin-top: 20vh;
+
+    min-width: 400px;
+    min-height: 300px; */
+
+    /* vw: vieport width, vh: viewport height */
+    /* width: 50vw;
+    height: 50vh;
+    display: flex; */
+    /* flex-wrap: wrap; */
+    /* border-width: 1px;
+
+    background: #DFCAFF ;
+
+    border-radius: 20px;
+    border: #FF5733; */
+    /* border-style: dashed; */
+
+}
+
+
+/* .login-container  .login-container__text {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+} */
+
+.login-container__text {
+        /* width: 300px;
+        height: 100px; */
+
+    /* padding: inherit; */
+    /* font-size:calc(16px + 1.5vw); */
+
+    /* top: 45%; */
+
+    min-width: 30px;
+    /* width: 50%; */
+    height: 4% fixed;
+    /* font-size: 2.5vw; */
+    /* MINIMUM FONT SIZE
+    font-size:calc(16px + .8vw);
+
+    /* MAX FONT SIZE */
+    /* font-size: max(.8vw, 20px); */
+
+
+    /* TAMAÑO MÍNIMO Y MÁXIMO DE FUENTE:
+    
+    - https://css-tricks.com/how-do-you-do-max-font-size-in-css/
+
+        ABSOLUTE SIZE, RELATIVE SIZE, LENGTH-PERCENTAGE
+    */
+    /* font-size: clamp(16px, 4vw, 22px); */
+    
+    font-family: 'IBM Plex Mono';
+    font-weight: bold;
+    font-size: clamp(14px, 3vh, 46px);
+    color: white;
+
+
+    text-align: center;
+
+    /* font-weight: bold; */
+    
+    /* Posición relativa al contenedor padre. */
+    position: absolute;
+    /* overflow: hidden; */
+    /* bottom: 45%;
+
+    margin: 0 auto; */
+    /* top: 50%; */
+    
+    /* CENTRAMOS VERTICALMENTE */
+    left: 50%;
+    transform: translateX(-50%);
+}
+/* block-name__element--modifier */
+.login-container__text-box {
+
+    /* font-size:calc(16px + 1vw); */
+    
+    min-width: 180px;
+    max-height: 30%;
+    width: 70%;
+
+    /* width: 30%;
+    height: 4% ; */
+    position: absolute;
+    /* font-family: 'IBM Plex Mono';
+    font-size: clamp(14px, 2vw, 20px); */
+
+    padding-left: 10px;
+    padding-right: 10px;
+
+    border: 1px solid lightgray;
+    background-color:#F5F5F5;
+    
+    border-radius: 10px;
+    /* TUVE QUE PONER BOTTOM PORQUE NO SE PUSO ENCIMA EL TEXTO DE LOS CUADROS. */
+    /* bottom: 40%; */
+    /* position: absolute; */
+    /* margin: auto; */
+
+    /* CENTRAMOS VERTICALMENTE */
+    left: 50%;
+    transform: translateX(-50%);
+
+    font-family: 'IBM Plex Mono';
+    font-weight: bold;
+    font-size: clamp(14px, 1.5vw, 22px);
+    color: black;
+}
+
+
+#username.login-container__text {
+    top: 45%;
+    /* font-size: 16px; */
+    /* float: left; */
+    /* left: 10%; */
+    /* margin-left: auto;
+    margin-right: 0; */
+}
+
+#username.login-container__text-box {
+    top: 52%;
+}
+
+#password.login-container__text {
+    /* float: right; */
+    /* right: 10%; */
+    top: 63%;
+}
+#password.login-container__text-box {
+    /* float: right; */
+    /* right: 10%; */
+    top: 70%;
+}
+
+#responsive-font.button {
+    font-family: 'IBM Plex Mono';
+    font-weight: bold;
+    font-size: clamp(16px, 1.5vw, 24px);
+    color: #000635;
+}
+#responsive-font {
+    font-family: 'IBM Plex Mono';
+    font-weight: bold;
+    font-size: clamp(14px, 1.5vw, 22px);
+    color: white;
+}
+#responsive-font.login-container__text-box
+ {
+    font-family: 'IBM Plex Mono';
+    font-weight: bold;
+    font-size: clamp(16px, 1.5vw, 22px);
+    color: black;
+}
+
